@@ -16,6 +16,18 @@ body {
 .menu-link {
   list-style-type: none;
 }
+
+.menu-links a {
+  text-decoration: none; /* sin subrayado */
+  color: #ffcc00; /* el color que quieras */
+  font-weight: 500; /* un poco más gruesa la letra */
+}
+
+/* opcional: hover */
+.menu-links a:hover {
+  color: white; /* cambia de color al pasar el mouse */
+}
+
 .header {
   color: papayawhip;
   background-color: #589ecb;
@@ -260,5 +272,50 @@ h2 {
   }
   .footer__img {
     height: 250px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .menu {
+    font-size: 10px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header__img {
+    height: 200px;
+  }
+  .section1 {
+    flex-direction: column;
+  }
+  .section1__img {
+    height: 200px;
+  }
+  .section2 {
+    flex-direction: column;
+  }
+  .section2__img {
+    height: 200px;
+  }
+  .section2__text {
+    font-size: 12px;
+    width: 300px;
+  }
+  .footer__img {
+    height: 200px;
+  }
+  .lala {
+    height: 180px;
+  }
+  .rutina {
+    flex-direction: column;
+  }
+  .rutina__text {
+    font-size: 13px;
+  }
+  .rutina__img {
+    height: 200px;
+  }
+  .galeria-picture {
+    height: 200px;
   }
 }
